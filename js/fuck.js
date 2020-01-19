@@ -54,11 +54,15 @@
                         // here you get RESPONSE TEXT (BODY), in JSON format, so you can use JSON.parse
                         const arr = this.responseText;
                         // printing url, request headers, response headers, response body, to console
-                        //console.log(this._url);
                         if(this._url.indexOf(fuckPath) != -1){
+                           // console.log(this._url);
+                            let host = this._url.split('/')[2]
                             let fuck = JSON.parse(arr)
                             //alert(fuck.fortSsoVoQuery.sid)
-                            prompt('已经获取到sid',fuck.fortSsoVoQuery.sid)
+                            //prompt('已经获取到sid',fuck.fortSsoVoQuery.sid)
+                            window.open('rdp:full%20address=s:' +
+                                host +
+                                ':12025&disable menu anims=i:1&prompt for credentials on client=i:1&gatewayusagemethod=i:2&authentication level=i:2&redirectclipboard=i:1&enablecredsspsupport=i:1&displayconnectionbar=i:1&StartFullScreen=i:0&screen mode id=i:1&username=s:'+fuck.fortSsoVoQuery.sid)
                         }
                         //console.log(arr)
                         //console.log(JSON.parse(this._requestHeaders));
