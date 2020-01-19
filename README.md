@@ -21,19 +21,19 @@
 
 在Chrome右上角找到本插件：
 
-![image-20200119102449788](/Users/huanghongzhi/WebstormProjects/f-ck-sangfor-hac/dist/image-20200119102449788.png)
+![image-20200119102449788](dist/image-20200119102449788.png)
 
 点击后会弹出一个窗口进行相关配置，如需要使用请选择**开启**，运维系统地址请填写运维系统所在**IP**，例如 192.168.199.99，配置后点击保存即可生效。
 
-![image-20200119102552792](/Users/huanghongzhi/WebstormProjects/f-ck-sangfor-hac/dist/image-20200119102552792.png)
+![image-20200119102552792](dist/image-20200119102552792.png)
 
-在运维系统选择Win中间机，选择**RDP**协议，填写合法的帐号及密码点击确认即可获取对应的sid![image-20200119102813439](/Users/huanghongzhi/WebstormProjects/f-ck-sangfor-hac/dist/image-20200119102813439.png)
+在运维系统选择Win中间机，选择**RDP**协议，填写合法的帐号及密码点击确认即可获取对应的sid![image-20200119102813439](dist/image-20200119102813439.png)
 
-![image-20200119102948092](/Users/huanghongzhi/WebstormProjects/f-ck-sangfor-hac/dist/image-20200119102948092.png)
+![image-20200119102948092](dist/image-20200119102948092.png)
 
 复制sid后进行后续Microsoft Remote Desktop 相关配置，添加PC资源，填写运维系统的ip及代理端口进行连接，填入sid即可连接win目标服务器。
 
-![image-20200119103222417](/Users/huanghongzhi/WebstormProjects/f-ck-sangfor-hac/dist/image-20200119103222417.png)
+![image-20200119103222417](dist/image-20200119103222417.png)
 
-![image-20200119103257843](/Users/huanghongzhi/WebstormProjects/f-ck-sangfor-hac/dist/image-20200119103257843.png)
+![image-20200119103257843](dist/image-20200119103257843.png)
 
