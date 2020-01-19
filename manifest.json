@@ -1,0 +1,34 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "F@ck SangFor",
+  "version": "1024",
+
+  // Recommended
+  //"default_locale": "zh-cn",
+  "description": "A plain text description",
+  "icons": {
+    "16": "img/icon.png",
+    "48": "img/icon.png",
+    "128": "img/icon.png"
+  },
+  "browser_action":
+  {
+    "default_icon": "img/icon.png",
+    "default_title": "F@ck SangFor",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [ {
+    "js": ["js/lets-party.js","js/fuck.js" ],
+    "matches": ["<all_urls>"],
+    "run_at": "document_start",
+    "all_frames": true
+  }],
+  "web_accessible_resources": ["js/fuck.js"],
+  "permissions": [
+    "storage",
+    "notifications",
+    "webRequest",
+    "webRequestBlocking"
+  ]
+}
