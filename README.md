@@ -13,7 +13,7 @@
 - AppId切换地区及国区的方法请自行百度或者Google
 - Microsoft Remote Desktop 10（不保证安全） https://www.techspot.com/downloads/4698-microsoft-remote-desktop-for-mac.html 
 - SecureCRT（不保证安全） https://www.zhinin.com/securecrt-mac.html
-- RCDefaultApp 2.1（不保证安全）  
+- RCDefaultApp 2.1（不保证安全）   http://www.rubicode.com/Software/Bundles.html#RCDefaultApp
 
 ## 环境配置
 安装SecureCRT后，安装RCDefaultApp后变更ssh协议默认程序
