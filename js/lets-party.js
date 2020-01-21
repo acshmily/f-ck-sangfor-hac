@@ -3,16 +3,16 @@ var initConfig = {
     fuckMode : 'on'
 }
 chrome.storage.sync.get(initConfig, function(items) {
+    console.info(items)
     initConfig = items
-});
-console.info(initConfig)
 
-if(window.location.host == initConfig.url){
-    console.info("访问路径匹配，开始初始化脚本")
-    var s = document.createElement('script');
-    s.src = chrome.extension.getURL('js/fuck.js');
-    s.onload = function() {
-        this.remove();
-    };
-    (document.head || document.documentElement).appendChild(s);
-}
+    if(window.location.host === initConfig.url && initConfig.fuckMode === 'on'){
+        console.info("访问路径匹配，开始初始化脚本")
+        var s = document.createElement('script');
+        s.src = chrome.extension.getURL('js/fuck.js');
+        s.onload = function() {
+            this.remove();
+        };
+        (document.head || document.documentElement).appendChild(s);
+    }
+});

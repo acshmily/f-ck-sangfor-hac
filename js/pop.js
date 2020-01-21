@@ -21,14 +21,14 @@ $('#save').click(function(){
     }
     chrome.storage.sync.set(_listener,function(){
         console.info("储存新的值,url:"+_listener.url)
-        console.info("储存新的值,host:"+_listener.host)
+        console.info("储存新的值,host:"+_listener.fuckMode)
         $('#url').val(_listener.url)
         $('input[name="switch"][value="'+_listener.fuckMode+'"]').attr("checked",true)
         initConfig = _listener
 
     })
     alert("配置已保存")
-
+    console.info(initConfig)
 })
 
 
