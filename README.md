@@ -7,6 +7,7 @@
 - 安装Microsoft Remote Desktop For Mac(支持Windows服务器)
 - 安装SecureCRT（支撑Unix服务器）
 - RCDefaultApp 2.1（修改Mac下默认程序）
+
 其中关于Microsoft Remote Desktop版本推荐版本10及以上，安装方式分为**AppStore（推荐）**及自行安装。其中AppStore安装方式需要更改您的AppId归属地区及国家，亲测侧换至US可以正常下载。
 
 - AppId切换地区及国区的方法请自行百度或者Google
