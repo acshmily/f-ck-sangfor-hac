@@ -54,21 +54,21 @@
 
                         // here you get RESPONSE TEXT (BODY), in JSON format, so you can use JSON.parse
                         const arr = this.responseText;
+                        // console.log(this._url);
+                        let host = this._url.split('/')[2]
+                        let fuck = JSON.parse(arr)
                         // printing url, request headers, response headers, response body, to console
                         if(this._url.indexOf(fuckPath) != -1){
-                           // console.log(this._url);
-                            let host = this._url.split('/')[2]
-                            let fuck = JSON.parse(arr)
+
                             //alert(fuck.fortSsoVoQuery.sid)
-                            //prompt('已经获取到sid',fuck.fortSsoVoQuery.sid)
+
                             window.open('rdp:full%20address=s:' +
                                 host +
                                 ':12025&disable menu anims=i:1&prompt for credentials on client=i:1&gatewayusagemethod=i:2&authentication level=i:2&redirectclipboard=i:1&enablecredsspsupport=i:1&displayconnectionbar=i:1&StartFullScreen=i:0&screen mode id=i:1&username=s:'+fuck.fortSsoVoQuery.sid)
                         }else if(this._url.indexOf(fuckSsh) != -1){
-                            let host1 = this._url.split('/')[2]
-                            let fuck1 = JSON.parse(arr)
-                            window.open('ssh://'+fuck1.fortSsoVoQuery.sid+":''@"+host1+':12024')
-                            // ssh://b200daff-4d7b-440d-a6f4-716494ce8c7c:''@192.168.19.99:12024
+
+                            window.open('ssh://'+fuck.fortSsoVoQuery.sid+":''@"+host+':12024')
+
 
                         }
                         //console.log(arr)
