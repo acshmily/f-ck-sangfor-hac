@@ -24,12 +24,16 @@ URLS->ssh->修改为SecureCRT 打开即可
 
 ![image-20200121153314560](dist/image-20200121153314560.png)
 
-## 关于本插件安装方法
-
+## 关于本插件安装方法(2020年03月02更新Tampermonkey插件方式)
+### 使用chrome插件方式（方式一）
 最新下载地址：https://github.com/acshmily/f-ck-sangfor-hac/releases
 
 安装方法：https://www.jianshu.com/p/bb51dc91b93a
+### 使用Tampermonkey方式（方式二，推荐不限定浏览器）
+在您使用的浏览器安装Tampermonkey插件（安装方法请自行搜索），添加拦截脚本即可，目前同步脚本已经发布至greasyfork
 
+
+脚本加载地址：https://greasyfork.org/zh-CN/scripts/397173-f-ck-sangfor-hac
 ## 使用方法
 
 在Chrome右上角找到本插件：
